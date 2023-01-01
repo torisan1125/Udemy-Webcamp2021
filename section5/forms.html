@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <form action="/action">
+    <input type="text" placeholder="ユーザー名" name="user" />
+    <!-- labelとidが一致させるようにする -->
+    <label for="cheese">Do you like cheese?</label>
+    <input type="checkbox" name="cheese" id="cheese" />
+
+    <p>
+      <label for="s">S</label>
+      <input type="radio" name="size" id="s" value="s" />
+      <label for="m">M</label>
+      <input type="radio" name="size" id="m" value="m" />
+      <label for="xs">XS</label>
+      <input type="radio" name="size" id="xs" value="xs" />
+    </p>
+
+    <!-- meal=meatが送信される -->
+    <p>
+      <label for="meal">食事を選択してください</label>
+      <select name="meal" id="meal">
+        <option value="fish">魚</option>
+        <option value="meat">肉</option>
+        <option value="vegetable">野菜</option>
+      </select>
+    </p>
+
+    <!-- textareaについて -->
+    <p>
+      <textarea name="comment" id="comment" cols="30" rows="20">
+コメントを入力する</textarea>
+    </p>
+
+    <button>送信1</button>
+  </form>
+
+  <form action="/validation">
+    <input type="text" name="fruit1" id="fruit1" required>
+    <input type="text" name="fruit2" id="fruit2" minlength="3">
+    <input type="text" name="fruit3" id="fruit3" maxlength="10">
+    E-mail
+    <input type="email" name="mail" id="mail" maxlength="10">
+    URL
+    <input type="url" name="url" id="url" maxlength="10">
+  </form>
+</html>
