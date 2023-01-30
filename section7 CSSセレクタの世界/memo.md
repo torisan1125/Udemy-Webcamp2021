@@ -116,3 +116,31 @@ h2::first-letter {
     font-size:50px
 }
 ```
+
+- CSS chromedevtoolでお試しで色を変更することができる
+
+- インラインスタイル
+  - 非推奨
+  - ID要素よりも詳細度が高くなる
+  - `<button style="color:red">`
+
+- important
+  - もっとも詳細度を上げる
+  - 非推奨
+
+```css
+button {
+    color: red !important;
+}
+```
+
+- CSSの継承について
+  - 特定の要素について色など指定されていない場合、親要素のCSSを適用される場合がある
+  - ex、h1タグに対して特に色についてCSSがない場合
+  - CSS属性によっては継承されるものもあれば、適用されないものもある
+
+```css
+button {
+    color: inherit; // 親要素を継承する
+}
+```
