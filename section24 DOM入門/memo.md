@@ -18,6 +18,10 @@
   - document.creatElement('img')
   - imgタグを作成する
 
+- documentElement.classList
+  - クラスを取得する
+  - 複数のクラスを取得することができる
+
 - appendChild
   - 子要素タグに追加する
 
